@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Eglantin | Annunci E-commerce</title>
+    <style>
+        /* ==================================== */
+        /* STILI GLOBALI (Stili già presenti nel tuo index.html) */
+        /* ==================================== */
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-top: 40px;
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 10px auto 20px auto;
+        }
+
+        /* STILE BARRA DI NAVIGAZIONE */
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        /* STILE PIÈ DI PAGINA (Footer) */
+        footer {
+            margin-top: 50px;
+            padding: 20px 0;
+            background-color: #333;
+            color: #f0f0f0;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+
+        /* ==================================== */
+        /* STILI SPECIFICI PER GLI ANNUNCI (Layout a Card) */
+        /* ==================================== */
+
+        /* Contenitore principale per la griglia */
+        .annunci-container {
+            max-width: 900px;
+            margin: 40px auto;
+            display: flex; /* Abilita Flexbox */
+            flex-wrap: wrap; /* Permette il wrap delle card */
+            justify-content: space-around; /* Distribuisce le card uniformemente */
+        }
+
+        /* Stile per la singola "Card" */
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            width: 250px; /* Larghezza fissa della card */
+            text-align: center;
+            transition: transform 0.3s; /* Animazione al passaggio del mouse */
+        }
+
+        .card:hover {
+            transform: translateY(-5px); /* Solleva la card al mouse-hover */
+        }
+
+        /* Stile specifico per le immagini all'interno delle card */
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            /* Rimuove eventuali stili di bordo ereditati da altre sezioni */
+            border: none;
+            box-shadow: none;
+            display: block; /* Rimuove lo spazio extra sotto l'immagine */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Stile per il prezzo */
+        .card .prezzo {
+            font-size: 1.5em;
+            color: #e94e77; /* Colore d'accento */
+            font-weight: bold;
+        }
+
+        /* Stile per il pulsante "Vedi Dettagli" */
+        .card .pulsante {
+            display: block; /* Rende il pulsante a tutta larghezza */
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+        }
+
+        .card .pulsante:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="annunci.html">Annunci</a>
+        <a href="contatti.html">Contatti</a>
+    </nav>
+
+    <h1>Le Nostre Offerte E-commerce</h1>
+    <p>Scopri i prodotti e servizi più recenti promossi da COE S.r.l.!</p>
+
+    <div class="annunci-container">
+    
+        <div class="card">
+            <img src="immagini/prodotto1.jpg" alt="Immagine prodotto 1">
+            <h2>Prodotto in Offerta Speciale</h2>
+            <p class="prezzo">€ 49,99</p>
+            <p>Descrizione breve del prodotto, evidenziando il principale beneficio o la promozione in corso.</p>
+            <a href="https://www.coessrl.eu/prodotto-1" target="_blank" class="pulsante">Vedi Dettagli</a>
+        </div>
+        
+        <div class="card">
+            <img src="immagini/servizio2.jpg" alt="Immagine servizio 2">
+            <h2>Nuovo Servizio di Consulenza</h2>
+            <p class="prezzo">A partire da € 99</p>
+            <p>Un servizio essenziale per i tuoi clienti e la tua attività. Contattaci per un preventivo gratuito!</p>
+            <a href="contatti.html" class="pulsante">Richiedi Info</a>
+        </div>
+        
+        <div class="card">
+            <img src="immagini/prodotto3.jpg" alt="Immagine prodotto 3">
+            <h2>Accessorio Innovativo</h2>
+            <p class="prezzo">€ 19,50</p>
+            <p>Piccolo e potente, l'accessorio che cambierà il tuo modo di lavorare o di divertirti.</p>
+            <a href="https://www.coessrl.eu/prodotto-3" target="_blank" class="pulsante">Acquista Ora</a>
+        </div>
+        
+    </div>
+    <footer>
+        <p>&copy; 2024 Eglantin | Sviluppato in HTML/CSS</p>
+        <p><a href="#">Torna su</a></p>
+    </footer>
+
+</body>
+</html>
